@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rejestracja</title>
+    <style type="text/css">
+        div {
+            margin: 0px 30%;
+        }
+    </style>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<div>
+    <h1>Rejestracja</h1>
+    <table>
+        <tr>
+            <td>Imię:</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="imie" value="wpisz imie" size="120"></td>
+        </tr>
+        <tr>
+            <td>Nazwisko:</td>
+        </tr>
+        <tr>
+            <td><input type="text" name="nazwisko" value="wpisz nazwisko" size="120"></td>
+        </tr>
+
+
+    </table>
+    <table>
+        <th>Podaj swoją płeć:</th>
+        <th><input type="radio" name="Płeć" value="Kobieta">Kobieta
+            <input type="radio" name="Płeć" value="Mężczyzna">Mężczyzna
+        </th>
+    </table>
+
+    <table style="text-align:left">
+        <div>
+            <tr>
+                <th>Adres email:</th>
+            <tr/>
+            <tr>
+                <td><input type="text" name="email" value="wpisz adres email" size="120"></td>
+            </tr>
+        </div>
+        <div>
+            <tr>
+                <br>
+                <th>Hasło:</th>
+            </tr>
+            <tr>
+                <td><input type="text" name="haslo" value="wpisz hasło" size="120"></td>
+
+            </tr>
+        </div>
+    </table>
+    <h5>Min. 8 znaków</h5>
+    <table>
+        <tr>
+            <th style="text-align:left">Miasto</th>
+            <th style="text-align:left">Województwo</th>
+            <th style="text-align:left">Kod pocztowy</th>
+        </tr>
+        <tr>
+            <td><input type="text" name="miasto" size="50"></td>
+            <td><select class="form-control" id="sel11">
+                <option>Dolnośląskie</option>
+                <option>Małopolskie</option>
+                <option>Śląskie</option>
+                <option>Zachodniopomorskie</option>
+            </select></td>
+            <td><input type="text" name="Kod" size="43"></td>
+        </tr>
+    </table>
+    <tr>
+        <td><label><input type="checkbox">Akceptuje <span style="color: blue;">regulamin</span></label></td>
+        <br>
+
+    </tr>
+    <tr>
+        <td><label><input type="checkbox" checked>Wyrażam zgodę na otrzymywanie informacji marketingowych</label></td>
+    </tr>
+    <tr>
+        <br>
+        <td colspan="2" align="center"><br>
+            <input type="submit" value="Wyślij">
+        </td>
+    </tr>
+
+</div>
+
+</body>
+</html>
